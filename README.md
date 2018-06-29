@@ -12,3 +12,6 @@ Need to access Azure storage using Linux and C++.  This will show you how to get
 - To get this compiled on Linux you need
   - Casablanca: https://github.com/Microsoft/cpprestsdk/wiki/How-to-build-for-Linux
   - The C++ library: https://github.com/Azure/azure-storage-cpp
+
+# New
+I created a multi-stage build Docker process.  See the Docker-Multi-Stage-Build folder.  This will build the libraries, then copy to another image to run.  This will keep your Docker image small.
